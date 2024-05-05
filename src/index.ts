@@ -25,7 +25,7 @@ const dmzjRules: TypedFlatConfigItem[] = [
   },
 ]
 
-export function dmzj(...params: Parameters<typeof antfu>): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
+export default function (...params: Parameters<typeof antfu>): FlatConfigComposer<TypedFlatConfigItem, ConfigNames> {
   if (params.length === 0) {
     return antfu({}, dmzjRules)
   }

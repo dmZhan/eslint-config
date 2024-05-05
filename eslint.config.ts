@@ -1,3 +1,3 @@
-import { dmzj } from './src'
+import dmzj from './src'
 
 export default dmzj()
